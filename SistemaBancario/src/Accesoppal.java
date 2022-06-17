@@ -6,16 +6,19 @@ public class Accesoppal {
 		int opc = 0;
 		do {
 			opc = Integer.parseInt(JOptionPane
-					.showInputDialog("\tMenú\n" + "1. Visualizar el saldo de la cuenta corriente del cliente.\n"
+					.showInputDialog("\tMenú\n" 
+			+ "1. Visualizar el saldo de la cuenta corriente del cliente.\n"
 							+ "2. Visualizar el saldo de la cuenta de ahorros del cliente.\n"
 							+ "3. Visualizar el saldo del CDT del cliente.\n"
 							+ "4. Visualizar el saldo total que tiene el cliente en los productos del banco.\n"
-							+ "5. Invertir un monto de dinero en un CDT.\n" + "6. Cerrar la inversión en CDT.\n"
+							+ "5. Invertir un monto de dinero en un CDT.\n" 
+							+ "6. Cerrar la inversión en CDT.\n"
 							+ "7. Consignar un monto de dinero en la cuenta corriente del cliente.\n"
 							+ "8. Retirar un monto de dinero en la cuenta corriente del cliente.\n"
 							+ "9. Consignar un monto de dinero en la cuenta de ahorros del cliente.\n"
 							+ "10. Retirar un monto de dinero en la cuenta de ahorros del cliente.\n"
-							+ "11. Avanzar en un mes la simulación.\n" + "0. Salir\n"));
+							+ "11. Avanzar en un mes la simulación.\n" 
+							+ "0. Salir\n"));
 			switch (opc) {
 			case 1:
 				JOptionPane.showMessageDialog(null, "$" + cliente.getCuentaCorriente().getSaldo());

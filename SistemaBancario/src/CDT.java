@@ -42,6 +42,6 @@ public class CDT {
 	}
 
 	public void Intereses() {
-		this.saldo = this.saldo * interes;
+		this.saldo += this.saldo * (this.interes/100);
 	}
 }

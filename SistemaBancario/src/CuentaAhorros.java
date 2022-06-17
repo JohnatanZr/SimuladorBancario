@@ -36,9 +36,12 @@ public class CuentaAhorros {
 		if (this.saldo >= retiro) {
 			this.saldo -= retiro;
 			JOptionPane.showMessageDialog(null, "Retiro exitoso");
+		} else {
+			JOptionPane.showMessageDialog(null, "No hay saldo");
 		}
 	}
+
 	public void Intereses() {
-		this.saldo = this.saldo * interes;
+		this.saldo += this.saldo * this.interes;
 	}
 }

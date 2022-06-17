@@ -26,6 +26,8 @@ public class CuentaCorriente {
 		if (this.saldo >= retiro) {
 			this.saldo -= retiro;
 			JOptionPane.showMessageDialog(null, "Retiro exitoso");
+		} else {
+			JOptionPane.showMessageDialog(null, "No hay saldo");
 		}
 	}
 }
